@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Agriguardian",
+    "slug": "agriguardian",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/for_app/logo.png",
+    "scheme": "agriguardian",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/for_app/foregroundImage.jpg",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/for_app/logo.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/for_app/splash_screen.jpg",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
